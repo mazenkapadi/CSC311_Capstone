@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1396.0" prefWidth="1404.0" style="-fx-background-color: cadetblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.PostAndCommentsController">
+   <content>
+      <VBox fx:id="Holder" style="-fx-background-color: derive(cadetblue, 50%);">
+         <children>
+            <Button mnemonicParsing="false" onAction="#BackButton" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: cadetblue;" text="&lt;--- Back" />
+            <VBox fx:id="PostObject1" prefHeight="635.0" spacing="10.0" style="-fx-background-color: lightblue; -fx-background-insets: 20;">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+            </VBox>
+            <HBox>
+               <children>
+                  <Label fx:id="UsernameOfPoster1" onMouseClicked="#usernameClick" text="    Responses">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="27.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="WriteComment" mnemonicParsing="false" onAction="#CreateComment" prefHeight="74.0" prefWidth="187.0" style="-fx-background-color: derive(cadetblue, 30%);" text="Write A Comment">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox fx:id="PostObject" prefHeight="635.0" prefWidth="1282.0" spacing="10.0" style="-fx-background-color: lightcyan; -fx-background-insets: 20;">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+            </VBox>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: cadetblue;" text="&lt;--- Back" />
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

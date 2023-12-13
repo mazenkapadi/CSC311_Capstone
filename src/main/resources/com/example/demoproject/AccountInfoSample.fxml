@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1865.0" style="-fx-background-color: derive(lightblue, 25%);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.AccountInfoSampleController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="ProfilePicture" fitHeight="160.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Dead-bird_final2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="UsernameLabel" prefHeight="111.0" prefWidth="381.0" text="Username">
+               <font>
+                  <Font name="Yu Gothic Medium" size="55.0" />
+               </font>
+               <padding>
+                  <Insets left="60.0" top="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="EmailLabel" opacity="0.67" prefHeight="24.0" prefWidth="211.0" text="Email Here" textFill="#1a0279">
+               <font>
+                  <Font name="Yu Gothic Medium" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="75.0" top="70.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Follow" prefHeight="106.0" prefWidth="198.0" style="-fx-background-color: cadetblue;" text="Follow">
+               <font>
+                  <Font name="Yu Gothic Medium" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.016995614394545555" green="0.08866045624017715" blue="0.40789473056793213" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.05701754242181778" green="0.09883040934801102" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets left="120.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextArea fx:id="Biography" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="1184.0" style="-fx-background-color: derive(cadetblue, 25%);" wrapText="true">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="40.0" left="40.0" right="350.0" top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Yu Gothic Medium" size="25.0" />
+         </font>
+      </TextArea>
+      <HBox prefHeight="142.0" prefWidth="1031.0">
+         <children>
+            <Button fx:id="ChangeProfPicButton" mnemonicParsing="false" onAction="#ChangeProfPic" prefHeight="106.0" prefWidth="198.0" style="-fx-background-color: cadetblue;" text="Change Profile Picture">
+               <font>
+                  <Font name="Yu Gothic Medium" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.016995614394545555" green="0.08866045624017715" blue="0.40789473056793213" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.05701754242181778" green="0.09883040934801102" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#SetNewBio" prefHeight="106.0" prefWidth="198.0" style="-fx-background-color: cadetblue;" text="Set New Bio">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.016203703358769417" green="0.010233918204903603" blue="0.3684210479259491" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.022417154163122177" green="0.08070175349712372" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="75.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

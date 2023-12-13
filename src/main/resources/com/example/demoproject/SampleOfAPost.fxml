@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox fx:id="PostObject" prefHeight="635.0" prefWidth="1282.0" spacing="10.0" style="-fx-background-color: lightblue; -fx-background-insets: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.SampleOfAPostController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <HBox>
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Dead-bird_final.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="UsernameOfPoster" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#usernameClick" prefHeight="79.0" prefWidth="166.0" style="-fx-background-color: lightblue;" text="Username">
+               <font>
+                  <Font name="Yu Gothic Medium" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets left="20.0" top="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="PostText" editable="false" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#postClick" prefHeight="150.0" prefWidth="500.0" style="-fx-background-color: lightblue;" wrapText="true">
+         <font>
+            <Font name="Yu Gothic Medium" size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+      <ImageView fx:id="PostImage" fitHeight="305.0" fitWidth="352.0" onMouseClicked="#postClick" pickOnBounds="true" preserveRatio="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Button fx:id="CommentButton" mnemonicParsing="false" onAction="#postClick" onMouseClicked="#postClick" text="Comment">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="CommentCount" text="0 Comments">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="LikeButton" mnemonicParsing="false" onAction="#LikeClick" text="Like">
+               <HBox.margin>
+                  <Insets left="50.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="LikeCount" prefWidth="65.0" text="0 Likes">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label onMouseClicked="#postClick" text="Time" textFill="#05025e">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Yu Gothic Medium" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="indexLabel" onMouseClicked="#postClick" opacity="0.0" prefHeight="45.0" prefWidth="706.0" text="x" textAlignment="RIGHT">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="700.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+</VBox>
