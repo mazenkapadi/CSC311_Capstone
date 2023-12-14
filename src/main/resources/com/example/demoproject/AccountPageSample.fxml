@@ -7,101 +7,114 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.Font?>
-<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseMoved="#TwittlerPageController" prefHeight="1434.0" prefWidth="1867.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.AccountPageSampleController">
-   <content>
-      <VBox fx:id="PostHolder" prefHeight="1209.0" prefWidth="1780.0" style="-fx-background-color: lightcyan;">
-         <children>
-            <HBox prefHeight="150.0" prefWidth="1692.0" style="-fx-background-color: lightblue, derive(lightblue, 25%), derive(lightblue, 50%); -fx-background-insets: 0, 20, 40;">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#BackButton" prefHeight="33.0" prefWidth="81.0" style="-fx-background-color: cadetblue;" text="&lt;--- Back" />
-                  <Label fx:id="TwittlrLabel" alignment="TOP_CENTER" prefHeight="115.0" prefWidth="465.0" text="Tweetlr">
-                     <font>
-                        <Font name="Yu Gothic Light" size="96.0" />
-                     </font>
-                     <textFill>
-                        <LinearGradient endX="1.0" startY="1.0">
-                           <stops>
-                              <Stop>
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="0.010067114093959731">
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="1.0">
-                                 <color>
-                                    <Color />
-                                 </color>
-                              </Stop>
-                           </stops>
-                        </LinearGradient>
-                     </textFill>
-                  </Label>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../Pictures/Dead-bird_final2.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="875.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" onAction="#LogInEvent" prefHeight="74.0" prefWidth="136.0" style="-fx-background-color: derive(cadetblue, 30%);" text="My Account">
-                     <HBox.margin>
-                        <Insets left="50.0" top="35.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Button>
-               </children>
-            </HBox>
-            <VBox fx:id="UserInformation" prefHeight="531.0" prefWidth="1865.0">
-               <padding>
-                  <Insets bottom="20.0" left="20.0" right="20.0" />
-               </padding>
-            </VBox>
-            <HBox prefHeight="64.0" prefWidth="1780.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <Label fx:id="TwittlrLabel1" alignment="TOP_CENTER" prefHeight="117.0" prefWidth="291.0" text="Posts">
-                     <font>
-                        <Font name="Yu Gothic Light" size="62.0" />
-                     </font>
-                     <textFill>
-                        <LinearGradient endX="1.0" startY="1.0">
-                           <stops>
-                              <Stop>
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="0.010067114093959731">
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="1.0">
-                                 <color>
-                                    <Color />
-                                 </color>
-                              </Stop>
-                           </stops>
-                        </LinearGradient>
-                     </textFill>
-                     <HBox.margin>
-                        <Insets top="10.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <VBox fx:id="PostObject1" prefHeight="405.0" prefWidth="1780.0">
-               <padding>
-                  <Insets bottom="20.0" left="20.0" right="20.0" />
-               </padding>
-            </VBox>
-         </children>
-      </VBox>
-   </content>
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            onMouseMoved="#TwittlerPageController" prefHeight="1434.0" prefWidth="1867.0"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demoproject.AccountPageSampleController">
+    <content>
+        <VBox fx:id="PostHolder" prefHeight="1209.0" prefWidth="1780.0" style="-fx-background-color: lightcyan;">
+            <children>
+                <HBox prefHeight="150.0" prefWidth="1692.0"
+                      style="-fx-background-color: lightblue, derive(lightblue, 25%), derive(lightblue, 50%); -fx-background-insets: 0, 20, 40;">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#BackButton" prefHeight="33.0" prefWidth="81.0"
+                                style="-fx-background-color: cadetblue;" text="&lt;--- Back"/>
+                        <Label fx:id="TwittlrLabel" alignment="TOP_CENTER" prefHeight="115.0" prefWidth="465.0"
+                               text="Tweetlr">
+                            <font>
+                                <Font name="Yu Gothic Light" size="96.0"/>
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.010067114093959731">
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color/>
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../Pictures/Dead-bird_final2.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="875.0" layoutY="10.0" pickOnBounds="true"
+                                   preserveRatio="true"/>
+                        <Button mnemonicParsing="false" onAction="#LogInEvent" prefHeight="74.0" prefWidth="136.0"
+                                style="-fx-background-color: derive(cadetblue, 30%);" text="My Account">
+                            <HBox.margin>
+                                <Insets left="50.0" top="35.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <VBox fx:id="UserInformation" prefHeight="531.0" prefWidth="1865.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0"/>
+                    </padding>
+                </VBox>
+                <HBox prefHeight="64.0" prefWidth="1780.0" style="-fx-background-color: lightblue;">
+                    <children>
+                        <Label fx:id="TwittlrLabel1" alignment="TOP_CENTER" prefHeight="117.0" prefWidth="291.0"
+                               text="Posts">
+                            <font>
+                                <Font name="Yu Gothic Light" size="62.0"/>
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.010067114093959731">
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color/>
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <HBox.margin>
+                                <Insets top="10.0"/>
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <VBox fx:id="PostObject1" prefHeight="405.0" prefWidth="1780.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </VBox>
+    </content>
 </ScrollPane>

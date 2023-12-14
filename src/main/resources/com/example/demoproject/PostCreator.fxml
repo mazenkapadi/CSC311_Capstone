@@ -7,92 +7,103 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.PostCreatorController">
-   <children>
-      <VBox prefHeight="880.0" prefWidth="1112.0" style="-fx-background-color: lightblue;">
-         <children>
-            <HBox prefHeight="150.0" prefWidth="1082.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#BackButton" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: cadetblue;" text="&lt;--- Back">
-                     <HBox.margin>
-                        <Insets left="10.0" top="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Label alignment="TOP_CENTER" prefHeight="115.0" prefWidth="465.0" text="Tweetlr">
-                     <font>
-                        <Font name="Yu Gothic Light" size="96.0" />
-                     </font>
-                     <textFill>
-                        <LinearGradient endX="1.0" startY="1.0">
-                           <stops>
-                              <Stop>
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="0.010067114093959731">
-                                 <color>
-                                    <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
-                                 </color>
-                              </Stop>
-                              <Stop offset="1.0">
-                                 <color>
-                                    <Color />
-                                 </color>
-                              </Stop>
-                           </stops>
-                        </LinearGradient>
-                     </textFill>
-                  </Label>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../Pictures/Dead-bird_final2.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="129.0" style="-fx-background-color: cadetblue;" text="My Account">
-                     <HBox.margin>
-                        <Insets left="10.0" top="20.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Yu Gothic Light" size="15.0" />
-                     </font>
-                  </Button>
-               </children>
-            </HBox>
-            <Label prefHeight="82.0" prefWidth="283.0" text="           Write A Post">
-               <font>
-                  <Font name="Yu Gothic Medium" size="31.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="NewPostText" onKeyPressed="#KeyTypedSpellCheck" onKeyTyped="#KeyTypedSpellCheck" prefHeight="291.0" prefWidth="1112.0" style="-fx-background-color: lightblue;" wrapText="true">
-               <padding>
-                  <Insets left="100.0" right="100.0" />
-               </padding>
-            </TextArea>
-            <HBox>
-               <children>
-                  <Label prefHeight="82.0" prefWidth="391.0" text="           Attatch An Image">
-                     <font>
-                        <Font name="Yu Gothic Medium" size="31.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="ChooseImageButton" mnemonicParsing="false" onAction="#ChooseImage" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: cadetblue;" text="Choose Image">
-                     <HBox.margin>
-                        <Insets top="20.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <Button fx:id="CreatePost" mnemonicParsing="false" onAction="#CreateNewPost" prefHeight="91.0" prefWidth="124.0" style="-fx-background-color: cadetblue;" text="Post">
-               <VBox.margin>
-                  <Insets left="900.0" top="100.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="34.0" />
-               </font>
-            </Button>
-         </children>
-      </VBox>
-   </children>
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+            minWidth="-Infinity" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.PostCreatorController">
+    <children>
+        <VBox prefHeight="880.0" prefWidth="1112.0" style="-fx-background-color: lightblue;">
+            <children>
+                <HBox prefHeight="150.0" prefWidth="1082.0" style="-fx-background-color: lightblue;">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#BackButton" prefHeight="25.0" prefWidth="70.0"
+                                style="-fx-background-color: cadetblue;" text="&lt;--- Back">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Label alignment="TOP_CENTER" prefHeight="115.0" prefWidth="465.0" text="Tweetlr">
+                            <font>
+                                <Font name="Yu Gothic Light" size="96.0"/>
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="0.010067114093959731">
+                                            <color>
+                                                <Color red="0.10999999940395355" green="0.21171428263187408"
+                                                       blue="1.0"/>
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color/>
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../Pictures/Dead-bird_final2.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+                        <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="129.0"
+                                style="-fx-background-color: cadetblue;" text="My Account">
+                            <HBox.margin>
+                                <Insets left="10.0" top="20.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font name="Yu Gothic Light" size="15.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <Label prefHeight="82.0" prefWidth="283.0" text="           Write A Post">
+                    <font>
+                        <Font name="Yu Gothic Medium" size="31.0"/>
+                    </font>
+                </Label>
+                <TextArea fx:id="NewPostText" onKeyPressed="#KeyTypedSpellCheck" onKeyTyped="#KeyTypedSpellCheck"
+                          prefHeight="291.0" prefWidth="1112.0" style="-fx-background-color: lightblue;"
+                          wrapText="true">
+                    <padding>
+                        <Insets left="100.0" right="100.0"/>
+                    </padding>
+                </TextArea>
+                <HBox>
+                    <children>
+                        <Label prefHeight="82.0" prefWidth="391.0" text="           Attatch An Image">
+                            <font>
+                                <Font name="Yu Gothic Medium" size="31.0"/>
+                            </font>
+                        </Label>
+                        <Button fx:id="ChooseImageButton" mnemonicParsing="false" onAction="#ChooseImage"
+                                prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: cadetblue;"
+                                text="Choose Image">
+                            <HBox.margin>
+                                <Insets top="20.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button fx:id="CreatePost" mnemonicParsing="false" onAction="#CreateNewPost" prefHeight="91.0"
+                        prefWidth="124.0" style="-fx-background-color: cadetblue;" text="Post">
+                    <VBox.margin>
+                        <Insets left="900.0" top="100.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="34.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
 </AnchorPane>

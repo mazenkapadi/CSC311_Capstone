@@ -8,44 +8,48 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<VBox fx:id="Comment" prefHeight="635.0" prefWidth="1282.0" spacing="10.0" style="-fx-background-color: lightblue; -fx-background-insets: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.SampleCommentController">
-   <padding>
-      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-   </padding>
-   <children>
-      <HBox>
-         <children>
-            <ImageView fitHeight="92.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Pictures/Dead-bird_final.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="UsernameOfPoster" onMouseClicked="#usernameClick" style="-fx-background-color: lightblue;" text="Username">
-               <font>
-                  <Font name="Yu Gothic Medium" size="27.0" />
-               </font>
-               <padding>
-                  <Insets left="20.0" top="50.0" />
-               </padding>
-            </Label>
-         </children>
-      </HBox>
-      <TextArea fx:id="PostText" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="500.0" style="-fx-background-color: lightblue;" wrapText="true">
-         <font>
-            <Font name="Yu Gothic Medium" size="17.0" />
-         </font>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </TextArea>
-      <ImageView fx:id="PostImage" fitHeight="305.0" fitWidth="352.0" pickOnBounds="true" preserveRatio="true" />
-      <Label text="Time" textFill="#020d72">
-         <font>
-            <Font name="Yu Gothic Medium" size="21.0" />
-         </font>
-      </Label>
-   </children>
-   <opaqueInsets>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </opaqueInsets>
+<VBox fx:id="Comment" prefHeight="635.0" prefWidth="1282.0" spacing="10.0"
+      style="-fx-background-color: lightblue; -fx-background-insets: 20;" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.SampleCommentController">
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+    </padding>
+    <children>
+        <HBox>
+            <children>
+                <ImageView fitHeight="92.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../Pictures/Dead-bird_final.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="UsernameOfPoster" onMouseClicked="#usernameClick" style="-fx-background-color: lightblue;"
+                       text="Username">
+                    <font>
+                        <Font name="Yu Gothic Medium" size="27.0"/>
+                    </font>
+                    <padding>
+                        <Insets left="20.0" top="50.0"/>
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+        <TextArea fx:id="PostText" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0"
+                  prefWidth="500.0" style="-fx-background-color: lightblue;" wrapText="true">
+            <font>
+                <Font name="Yu Gothic Medium" size="17.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </TextArea>
+        <ImageView fx:id="PostImage" fitHeight="305.0" fitWidth="352.0" pickOnBounds="true" preserveRatio="true"/>
+        <Label text="Time" textFill="#020d72">
+            <font>
+                <Font name="Yu Gothic Medium" size="21.0"/>
+            </font>
+        </Label>
+    </children>
+    <opaqueInsets>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </opaqueInsets>
 </VBox>
